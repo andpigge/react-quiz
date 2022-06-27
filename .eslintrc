@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "react/function-component-definition": "off",  // Можно использовать стрелочные функции как компонент
+        "no-tabs": "off",                              // Можно использовать табы
+        "indent": [2, "tab"],                          // Использовать только 2 таба
+        "react/jsx-indent": [2, "tab"],                // Использовать только 2 таба в JSX
+        "import/prefer-default-export" : "off",        // Необязательно импорт по умолчанию компонентов
+        "no-restricted-exports": "off",                // Можно использовать default в экспорте
+        "import/extensions": "off"  ,                  // Расширение при импорте не обязательно
+        "import/no-unresolved": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", "tsx"] }],
+        "react/jsx-indent-props": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/require-default-props": "off",
+        "react/no-unescaped-entities": "warn"
+    }
+}

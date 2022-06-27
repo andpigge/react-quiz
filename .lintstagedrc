@@ -1,0 +1,6 @@
+{
+	"*.{js,jsx,ts,tsx}": [
+		"npm run lint:js"
+	],
+	"*.{css,(s[ca]ss)}": "npm run lint:css"
+}
